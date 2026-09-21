@@ -8,9 +8,13 @@ WebGIS municipal da GeoTerra Sensoriamento dedicado à cadeia produtiva da pimen
 - panorama municipal de pimentas do Censo Agropecuário 2017;
 - registro específico de pimenta dedo-de-moça de Santa Adélia em 2026;
 - indicadores, ranking, histórico, mercado e fontes;
+- cotações de atacado da CEAGESP e da CEASA Campinas;
+- atualização automática dos preços às segundas, quartas e sextas-feiras;
 - unidade piloto Pimentas Mariotto em Santa Adélia;
 - exportação dos dados exibidos em CSV.
 
 Os dados municipais de 2017 vêm da tabela 6953 do IBGE/SIDRA, categoria “Pimenta”, que reúne variedades de pimenta e não somente dedo-de-moça. Os dados de 2026 são registros próprios da Pimentas Mariotto. Valores sob sigilo estatístico ou sem informação permanecem sem valor numérico. A malha municipal é obtida do IBGE e o mapa-base utiliza OpenStreetMap.
+
+As cotações ficam em `prices.json`. A rotina `scripts/update_prices.py`, executada pelo GitHub Actions, consulta a pimenta dedo-de-moça na CEAGESP e o boletim mais recente da CEASA Campinas. Se uma fonte falhar, o último valor válido é preservado.
 
 Desenvolvido por Geovane Mariotto · GeoTerra Sensoriamento.
