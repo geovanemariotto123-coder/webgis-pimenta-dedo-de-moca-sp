@@ -1,0 +1,27 @@
+{
+  "updated_at": "2026-09-21T17:39:53-03:00",
+  "updated_at_display": "21/09/2026 às 17:39",
+  "sources": {
+    "ceagesp": {
+      "product": "Pimenta dedo-de-moça",
+      "date": "18/09/2026",
+      "unit": "kg",
+      "low": 14.28,
+      "common": 16.95,
+      "high": 18.85,
+      "source_url": "https://ceagesp.gov.br/cotacoes/",
+      "status": "ok"
+    },
+    "ceasa_campinas": {
+      "product": "Pimenta ardida/vermelha",
+      "date": "21/09/2026",
+      "unit": "kg",
+      "low": 15.0,
+      "common": 18.0,
+      "high": 20.0,
+      "source_url": "https://ceasacampinas.com.br/sites/ceasacampinas.com.br/files/cotacoes/2026/09/21%2009%202026.pdf",
+      "status": "ok"
+    }
+  },
+  "errors": []
+}
