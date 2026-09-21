@@ -2,14 +2,15 @@
 
 WebGIS municipal da GeoTerra Sensoriamento dedicado à cadeia produtiva da pimenta dedo-de-moça em São Paulo, seguindo a mesma metodologia visual do WebGIS do limão.
 
-## Conteúdo da primeira versão
+## Conteúdo
 
 - mapa coroplético dos 645 municípios paulistas;
-- filtros anuais de 2020 a 2026;
+- panorama municipal de pimentas do Censo Agropecuário 2017;
+- registro específico de pimenta dedo-de-moça de Santa Adélia em 2026;
 - indicadores, ranking, histórico, mercado e fontes;
 - unidade piloto Pimentas Mariotto em Santa Adélia;
-- exportação dos dados anuais em CSV.
+- exportação dos dados exibidos em CSV.
 
-Os dados produtivos confirmados são registros próprios de 2026. Anos sem levantamento integrado são identificados como “sem dados”. A malha municipal é obtida do IBGE e o mapa-base utiliza OpenStreetMap.
+Os dados municipais de 2017 vêm da tabela 6953 do IBGE/SIDRA, categoria “Pimenta”, que reúne variedades de pimenta e não somente dedo-de-moça. Os dados de 2026 são registros próprios da Pimentas Mariotto. Valores sob sigilo estatístico ou sem informação permanecem sem valor numérico. A malha municipal é obtida do IBGE e o mapa-base utiliza OpenStreetMap.
 
 Desenvolvido por Geovane Mariotto · GeoTerra Sensoriamento.
