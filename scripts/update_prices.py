@@ -143,10 +143,22 @@ def update_ceasa():
 def main():
     previous = json.loads(PRICES_FILE.read_text(encoding="utf-8")) if PRICES_FILE.exists() else {"sources": {}}
     sources = previous.setdefault("sources", {})
+    history = previous.setdefault("history", {})
     errors = []
     for key, updater in (("ceagesp", update_ceagesp), ("ceasa_campinas", update_ceasa)):
         try:
-            sources[key] = updater()
+            result = updater()
+            sources[key] = result
+            series = history.setdefault(key, [])
+            point = {
+                field: result[field]
+                for field in ("date", "low", "common", "high")
+                if field in result
+            }
+            series = [item for item in series if item.get("date") != result.get("date")]
+            series.append(point)
+            series.sort(key=lambda item: datetime.strptime(item["date"], "%d/%m/%Y"))
+            history[key] = series[-2500:]
         except Exception as exc:
             errors.append(f"{key}: {exc}")
             sources.setdefault(key, {})["status"] = "erro na atualização; mantido último valor válido"
