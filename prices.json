@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-28T19:44:56-03:00",
-  "updated_at_display": "28/10/2026 às 19:44",
+  "updated_at": "2026-10-30T19:33:24-03:00",
+  "updated_at_display": "30/10/2026 às 19:33",
   "sources": {
     "ceagesp": {
       "product": "Pimenta dedo-de-moça",
-      "date": "28/10/2026",
+      "date": "30/10/2026",
       "unit": "kg",
-      "low": 9.98,
-      "common": 12.77,
-      "high": 14.89,
+      "low": 9.12,
+      "common": 11.75,
+      "high": 13.82,
       "source_url": "https://ceagesp.gov.br/cotacoes/",
       "status": "ok"
     },
@@ -138,6 +138,12 @@
         "low": 9.98,
         "common": 12.77,
         "high": 14.89
+      },
+      {
+        "date": "30/10/2026",
+        "low": 9.12,
+        "common": 11.75,
+        "high": 13.82
       }
     ],
     "ceasa_campinas": [
